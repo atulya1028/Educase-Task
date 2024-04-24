@@ -1,0 +1,81 @@
+.header{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 68px;
+    padding-left: 15px;
+    padding-top: 27px;
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #1D2226;
+    opacity: 1;
+}
+
+.block{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.block2{
+    display: flex;
+}
+
+.camera{
+    z-index: 1;
+    position: absolute;
+    top:22%;
+    right: 93%;
+}
+
+.profile{
+    display: flex;
+    justify-content: start;
+    padding-right: 20px;
+    gap: 5px;
+}
+
+.name{
+    color: #1D2226;
+    font-size: 15px;
+    opacity: 100%;
+    font-family: Rubik;
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-size: 15px;
+    text-transform: capitalize;
+    width: 73px;
+    height: 18px;
+}
+
+.email{
+    color: #1D2226;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    width: 118px;
+    height: 17px;
+}
+
+.details{
+    margin-top: 30px;
+    width: 337px;
+    height: 63px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Rubik;
+    color: #1D2226;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+hr{
+    padding-top: 20px;
+    border: none;
+    border-top: 1px dashed #CBCBCB;
+    opacity: 1;
+    width: 100%;
+    height: 0px;
+}
