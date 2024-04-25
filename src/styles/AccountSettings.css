@@ -21,26 +21,47 @@
     display: flex;
 }
 
-.camera {
+.s{
+    z-index: 1;
     position: absolute;
-    top: 25%;
     right: 83%;
-    z-index: 1;
-}
-
-.xl-camera {
-    position: absolute;
-    top: 22%;
-    right: 93%;
-    z-index: 1;
-}
-
-.full-camera{
-    position: absolute;
     top: 25%;
-    right: 93%;
-    z-index: 1;
 }
+
+.l{
+    z-index: 1;
+    position: absolute;
+    right: 92%;
+    top: 23%;
+}
+
+.m{
+    z-index: 1;
+    position:absolute;
+    right: 80%;
+    top: 10%;
+}
+
+@media screen and (max-width:1440px){
+    .fl{
+        z-index: 1;
+        position: fixed;
+        top: 22%;
+        right: 93%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .xl{
+        z-index: 1;
+        position:absolute;
+        right: 93%;
+        top: 25%;
+    }
+}
+
+
+
 
 .profile-main{
     width: 200px;
