@@ -1,11 +1,9 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import '../styles/CreateAccount.css';
 import { Link } from 'react-router-dom';
 
 export const CreateAccount = () => {
-  useEffect((event)=>{
-    event.preventDefault();
-  },[]);
+
 
   return (
     <>

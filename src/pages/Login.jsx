@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../styles/Login.css'
 import { Link } from 'react-router-dom';
 
 
 export const Login = () => {
 
-  useEffect((event)=>{
-    event.preventDefault();
-  },[]);
+
 
 
   return (
