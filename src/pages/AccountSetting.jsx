@@ -67,7 +67,6 @@ export const AccountSetting = () => {
         </div>
       </div>
       <hr />
-      <div>{window.innerWidth}</div>
     </>
   );
 };
