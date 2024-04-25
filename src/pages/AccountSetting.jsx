@@ -5,16 +5,13 @@ import camera from "../images/camera.png";
 
 export const AccountSetting = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
 
   const handleScreenWidth = () => {
     setScreenWidth(window.innerWidth);
   };
-  const handleScreenHeight = () => {
-    setScreenHeight(window.innerHeight);
-  };
 
   useEffect(() => {
+    console.log("Width:", window.innerWidth);
     handleScreenWidth();
     window.addEventListener("resize", handleScreenWidth);
 
@@ -23,43 +20,35 @@ export const AccountSetting = () => {
     };
   }, []);
 
-  useEffect(() => {
-    handleScreenHeight();
-    window.addEventListener("resize", handleScreenHeight);
-
-    return () => {
-      window.removeEventListener("resize", handleScreenHeight);
-    };
-  }, []);
-
-  useEffect(() => {
-    console.log(screenWidth);
-  });
-
-  console.log("Width: ", screenWidth);
-  console.log("Height: ", window.innerHeight);
+  console.log("Width: ", window.innerWidth);
 
   return (
     <>
       <div className="header">Account Settings</div>
-      <div className="block" style={{
-        backgroundColor:'bisque',
-        width: screenHeight == 1440 ? 340 :'auto'
-      }}>
+      <div className="block" style={{}}>
         <div className="profile-main">
-          <div className="profile">
-            <div className="intro" >
+          <div
+            className="profile"
+          >
+            <div className="intro">
               <img src={profile} alt="Profile" />
-              {screenHeight >=750 ? <img src={camera} alt="Camera" className="fl"/> :
-              screenWidth >= 1440 ? (
-                <img src={camera} alt="Camera" className="xl" />
-              ) : screenWidth >= 710 ? (
-                <img src={camera} alt="Camera" className="l" />
-              ) : screenWidth >= 576 ? (
-                <img src={camera} alt="Camera" className="m" />
-              ) : (
-                <img src={camera} alt="Camera" className="s" />
-              )}
+              <img
+                src={camera}
+                alt="Camera"
+                className={
+                  screenWidth >= 320 && screenWidth <= 480
+                    ? "mobile"
+                    : screenWidth >= 481 && screenWidth <= 768
+                    ? "tablet"
+                    : screenWidth >= 769 && screenWidth <= 1024
+                    ? "laptops"
+                    : screenWidth >= 1025 && screenWidth <= 1200
+                    ? "desktop"
+                    : screenWidth >= 1201
+                    ? "extra"
+                    : ''
+                }
+              />
             </div>
             <div>
               <div className="name">Marry Doe</div>
@@ -74,6 +63,7 @@ export const AccountSetting = () => {
         </div>
       </div>
       <hr />
+      <div>{window.innerWidth}</div>
     </>
   );
 };

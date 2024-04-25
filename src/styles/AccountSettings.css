@@ -21,7 +21,7 @@
     display: flex;
 }
 
-.s{
+/* .s{
     z-index: 1;
     position: absolute;
     right: 83%;
@@ -58,6 +58,36 @@
         right: 93%;
         top: 25%;
     }
+} */
+.tablet {
+    position: absolute;
+    top: 25%;
+    right: 88%;
+}
+.laptops {
+    position: absolute;
+    top: 25%;
+    right: 91%;
+}
+.mobile {
+    position: absolute;
+    top: 26%;
+    right: 70%;
+}
+.desktop {
+    position: absolute;
+    top: 25%;
+    right: 91%;
+}
+.extra {
+    position: absolute;
+    top: 25%;
+    right: 93%;
+}
+.full-screen {
+    position: absolute;
+    top: 10% ;
+    right: 95%;
 }
 
 
