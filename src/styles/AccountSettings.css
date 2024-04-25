@@ -67,12 +67,12 @@
 .laptops {
     position: absolute;
     top: 25%;
-    right: 91%;
+    right: 88%;
 }
 .mobile {
     position: absolute;
-    top: 26%;
-    right: 70%;
+    top: 24%;
+    right: 93%;
 }
 .desktop {
     position: absolute;
@@ -82,16 +82,19 @@
 .extra {
     position: absolute;
     top: 25%;
+    right: 92%;
+}
+.extra-large {
+    position: absolute;
+    top: 40%;
     right: 93%;
 }
-.full-screen {
+
+.xxl{
     position: absolute;
-    top: 10% ;
-    right: 95%;
+    top: 22%;
+    right: 93%;
 }
-
-
-
 
 .profile-main{
     width: 200px;
